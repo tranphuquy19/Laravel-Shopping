@@ -1,7 +1,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <div class="h2">Chức năng sản phẩm</div>
+        <div class="h2">Sản phẩm</div>
     </div>
 </div>
 
