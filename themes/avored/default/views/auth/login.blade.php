@@ -61,7 +61,7 @@
                                     Quên mật khẩu?
                                 </a>
                                 <a class="" href="{{ url('register') }}">
-                                    Tạo mật khẩu
+                                    Tạo tài khoản
                                 </a>
                                 @if($errors->has('enableResendLink'))
                                     <div class="form-group">
