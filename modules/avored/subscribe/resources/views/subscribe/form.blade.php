@@ -4,7 +4,7 @@
 <div class="content">
     <div class="field newsletter">
         <label class="label" for="newsletter">
-            <span>Sign Up for Our Newsletter:</span>
+            <span>Đăng kí để nhận tin mới nhất: </span>
         </label>
     </div>
     <form class="navbar-form" action="{{ route('subscribe.store') }}" method="post">
@@ -21,7 +21,7 @@
             <div class="input-group-btn">
 
                 <button class="btn btn-primary" type="submit">
-                    <span>Subscribe</span>
+                    <span>Đăng kí</span>
                 </button>
             </div>
 
