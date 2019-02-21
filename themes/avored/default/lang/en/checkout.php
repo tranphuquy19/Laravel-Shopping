@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'personal_title'  => 'Personal information',
-    'address_title'   => 'Shipping Address',
-    'shipping_method' => 'Shipping methods',
-    'shipping_helper' => 'Please select the preferred shipping method to use on this order.',
-    'payment_method'  => 'Payment methods',
-    'payment_helper'  => 'Please select the preferred payment method to use on this order.',
-    'order_summary'   => 'Order Summary'
+    'personal_title'  => 'Thông tin cá nhân',
+    'address_title'   => 'Địa chỉ giao hàng',
+    'shipping_method' => 'Phương thức vận chuyển',
+    'shipping_helper' => 'Vui lòng chọn phương thức vận chuyển ưa thích để sử dụng cho đơn hàng này.',
+    'payment_method'  => 'Phương thức thanh toán',
+    'payment_helper'  => 'Vui lòng chọn phương thức thanh toán ưa thích để sử dụng cho đơn hàng này.',
+    'order_summary'   => 'Tóm tắt theo thứ tự'
 ];

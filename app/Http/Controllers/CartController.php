@@ -45,14 +45,14 @@ class CartController extends Controller
             return redirect()->back()
                 ->with(
                     'errorNotificationText',
-                    'Not Enough Qty Available. Please with less qty or Contact site Administrator!'
+                    'Không đủ sản phẩm. Vui lòng liên hệ với người quản lí!'
                 );
         }
 
         Cart::add($slug, $qty, $attribute);
         $this->setTaxAmount($slug, $qty, $attribute);
 
-        return redirect()->back()->with('notificationText', 'Product Added to Cart Successfully!');
+        return redirect()->back()->with('notificationText', 'Sản phẩnm đã được thêm vào giỏ thành công!');
     }
 
     public function view()
@@ -70,7 +70,7 @@ class CartController extends Controller
             return redirect()->back()
                 ->with(
                     'errorNotificationText',
-                    'Not Enough Qty Available. Please with less qty or Contact site Administrator!'
+                    'Không đủ sản phẩm. Vui lòng liên hệ với người quản lí!'
                 );
         }
 
@@ -82,7 +82,7 @@ class CartController extends Controller
     public function destroy($slug)
     {
         Cart::destroy($slug);
-        return redirect()->back()->with('notificationText', 'Product has been removed from Cart!');
+        return redirect()->back()->with('notificationText', 'Sản phẩm đã được loại bỏ khỏi giỏ!');
     }
 
     /**

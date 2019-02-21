@@ -8,7 +8,7 @@
             </span>
 
             <span class="float-right">
-                <a href="#" class="btn btn-primary">Write Review</a>
+                <a href="#" class="btn btn-primary">Viết đánh giá</a>
             </span>
 
         </div>
@@ -55,7 +55,7 @@
 
 
             <div class="review-form mt-3">
-                <div class="h5">Write a Review</div>
+                <div class="h5">Viết đánh giá</div>
 
                 <form method="post" action="{{ route('review.store') }}">
 
@@ -63,7 +63,7 @@
 
                     <div class="form-group">
 
-                        <label for="star">Please select star</label>
+                        <label for="star">Đánh giá</label>
                         <select name="star" class="form-control {{ $errors->has('star') ? ' is-invalid' : '' }}"
                                 id="star">
                             <option value="1">1</option>
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="content">Review Text</label>
+                        <label for="content">Nhận xét</label>
                         <textarea class="form-control{{ $errors->has('content') ? ' is-invalid' : '' }}"
                                   name="content"></textarea>
                         @if ($errors->has('content'))

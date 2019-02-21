@@ -9,6 +9,6 @@ return [
     |
     */
 
-   'cart_page' => 'Cart Page'
+   'cart_page' => 'Giỏ hàng'
   
 ];

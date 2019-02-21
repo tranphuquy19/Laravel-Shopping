@@ -10,7 +10,7 @@
         <div class="col-12">
             <div class="row">
                 @if(count($products) <= 0)
-                    <p>Sorry No Product Found</p>
+                    <p>Không tìm thấy sản phẩm</p>
                 @else
 
                     @foreach($products as $product)

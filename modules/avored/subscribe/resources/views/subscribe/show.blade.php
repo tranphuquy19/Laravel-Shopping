@@ -8,7 +8,7 @@
         <div class="card-body table-bordered">
             <table class="table">
                 <tr>
-                    <td>Name</td>
+                    <td>Tên</td>
                     <td>{{ $subscribe->name }}</td>
                 </tr>           
             

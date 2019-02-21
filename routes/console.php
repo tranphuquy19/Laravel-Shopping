@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('avored', function () {
     $this->comment(Inspiring::quote());
-})->describe('Hello From AvoRed E commerce');
+})->describe('Hello From ChipChip Watch');

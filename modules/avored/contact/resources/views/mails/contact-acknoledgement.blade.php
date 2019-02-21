@@ -2,12 +2,12 @@
 
 
 @component('mail::panel')
-# Contact Message Received
+#Tin nhắn đã nhận được
 
-You received this email as an acknoledgement because you send an inquiry thorough AvoRed Contact us form.
-We are happy to tell you that we have received your email and we will be in touch soon.
+Bạn đã nhận được email này dưới dạng xác nhận vì bạn gửi yêu cầu.
+Chúng tôi rất vui khi nói với bạn rằng chúng tôi đã nhận được email của bạn và chúng tôi sẽ liên lạc sớm.
 @endcomponent
 
     Thanks,
-    AvoRed
+    ChipChip Watch
 @endcomponent

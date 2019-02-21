@@ -4,14 +4,14 @@
 
 return [
 
-    'promotion-list' => "Promotion",
-    'promotion-create' => "Create",
-    'promotion-update' => "Update",
+    'promotion-list' => "Khuyến mãi",
+    'promotion-create' => "Tạo",
+    'promotion-update' => "Cập nhật",
 
 
-    'name'          => "Name",
-    'description'   => "Description",
-    'discount_type' => "Discount Type",
+    'name'          => "Tên",
+    'description'   => "Mô Tả",
+    'discount_type' => "Loại giảm giá",
     'amount'        => "Amount",
 
 

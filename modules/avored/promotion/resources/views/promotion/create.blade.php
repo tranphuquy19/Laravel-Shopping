@@ -15,7 +15,7 @@
                         <a data-toggle="collapse" data-parent="#promotion-save-accordion"
                            class="float-right" href="#basic">
                             <div class="card-header">
-                                Basic Details
+                                Chi tiết cơ bản
                             </div>
                         </a>
                         <div class="card-body collapse show" id="basic">
@@ -27,7 +27,7 @@
                         <a data-toggle="collapse" data-parent="#promotion-save-accordion"
                            class="float-right" href="#rules">
                             <div class="card-header">
-                                Rules
+                                Quy tắc
                             </div>
                         </a>
                         <div class="card-body collapse" id="rules">

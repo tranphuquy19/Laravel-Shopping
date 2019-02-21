@@ -19,7 +19,7 @@
                         @include('partials.forms.text',['name' => 'phone','label' => 'Phone'])
 
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message">Tin nhắn</label>
                             <textarea class="form-control{{ $errors->has('message') ? " is-invalid" : "" }}" name="message" id="messge"></textarea>
 
                             @if($errors->has('message'))
@@ -29,7 +29,7 @@
                             @endif
                         </div>
 
-                        <button type="submit" class="btn btn-primary" >Send</button>
+                        <button type="submit" class="btn btn-primary" >Gửi</button>
                     </form>
 
                 </div>

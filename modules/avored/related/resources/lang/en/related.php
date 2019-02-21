@@ -4,7 +4,7 @@
 
 return [
 
-    'related-product'       => "Related Product",
+    'related-product'       => "Sản phẩm liên quan",
 
 
 

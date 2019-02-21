@@ -2,23 +2,23 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            Banner Details
+            Chi tiết Banner
         </div>
 
         <div class="card-body table-bordered">
             <table class="table">
                 <tr>
-                    <td>Name</td>
+                    <td>Tên</td>
                     <td>{{ $banner->name }}</td>
                 </tr>
                 
                 <tr>
-                    <td>Image</td>
+                    <td>Ảnh</td>
                     <td><img src="{{ asset($banner->image_path) }}" style="max-height:100px" /></td>
                 </tr>
 
                 <tr>
-                    <td>Alt Text</td>
+                    <td>Chú thích</td>
                     <td>{{ $banner->alt_text }}</td>
                 </tr>
                 
@@ -63,7 +63,7 @@
                                         }
                                     });"    
                         class="btn btn-danger" >
-                        Destroy
+                        Hủy
                     </button>
                 </form>
                

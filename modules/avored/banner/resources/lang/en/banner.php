@@ -13,13 +13,13 @@ return [
     //BANNER FILED TRANSLATION
 
 
-    'name'          => 'Name',
-    'image-path'    => 'Image Path',
-    'atl-text'      => 'Alt Text',
+    'name'          => 'Tên',
+    'image-path'    => 'Đường dẫn',
+    'atl-text'      => 'Chú thích',
     'url'           => 'Url',
     'target'        => 'Target',
     'status'        => 'Status',
-    'sort-order'    => 'Sort Order'
+    'sort-order'    => 'Sắp xếp'
 
 
 
