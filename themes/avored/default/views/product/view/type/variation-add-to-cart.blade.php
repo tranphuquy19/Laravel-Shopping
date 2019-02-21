@@ -3,7 +3,7 @@
 
 <input type="hidden" name="slug" value="{{ $product->slug }}"/>
 <input id="product-price-hidden" type="hidden" name="price" value="{{ $product->price }}"/>
-<div class="badge badge-success fill">Trong giỏ</div>
+<div class="badge badge-success fill">Còn hàng</div>
 <hr>
 <div class="row">
     <div class="form-group col-md-1" style="">
