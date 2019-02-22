@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="col-md-6">
-                        <div class="h4">Categories List</div>
+                        <div class="h4">Danh mục123</div>
                         <ul class="left-menu list-group ">
 
                             @foreach($categories as $category)
