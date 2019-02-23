@@ -16,16 +16,16 @@ class OrderStatusDataGrid
         $dataGrid->model($model)
                 ->column('name', function (TextColumn $column) {
                     $column->identifier('name')
-                            ->label('Name')
+                            ->label('Tên')
                             ->sortable(true);
                 })
                 ->linkColumn('is_default', ['label' => 'Is Default'], function ($model) {
                     return ($model->is_default == 1) ? 'Yes' : 'No';
                 })
                 ->linkColumn('edit', [], function ($model) {
-                    return "<a href='" . route('admin.order-status.edit', $model->id) . "' >Edit</a>";
+                    return "<a href='" . route('admin.order-status.edit', $model->id) . "' >Chỉnh</a>";
                 })->linkColumn('show', [], function ($model) {
-                    return "<a href='" . route('admin.order-status.show', $model->id) . "' >Show</a>";
+                    return "<a href='" . route('admin.order-status.show', $model->id) . "' >Hiện</a>";
                 });
 
         $this->dataGrid = $dataGrid;

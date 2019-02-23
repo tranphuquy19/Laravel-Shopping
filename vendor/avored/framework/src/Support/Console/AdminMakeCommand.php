@@ -29,7 +29,7 @@ class AdminMakeCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Create an Admininistrator Account for AvoRed Admin';
+    protected $description = 'Tao tai khoang admin cho chipchipwatch Page';
 
     /**
      * Create a new controller creator command instance.
@@ -71,6 +71,6 @@ class AdminMakeCommand extends Command
         $clientRepository = new ClientRepository;
         $clientRepository->createPasswordGrantClient($adminUser->id, $adminUser->full_name, $request->getUriForPath('/'));
 
-        $this->info('AvoRed Ecommerce Administrator Account Created Successfully!');
+        $this->info('ChipChip Administrator Account Created Successfully!');
     }
 }

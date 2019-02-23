@@ -80687,6 +80687,9 @@ module.exports = function(global) {
       if(typeof el === "string")
         el = document.getElementById(el);
 
+		var quy1 = document.getElementsByClassName("lh-1 mB-0 logo-text");
+		if(quy1[0].innerHTML == "Avored") quy1[0].innerHTML = "ChipChip"
+
       for(i = this.list.length; i--; )
         if(this.list[i].element === el) {
           this.list[i].drawing = this._determineDrawingFunction(draw);

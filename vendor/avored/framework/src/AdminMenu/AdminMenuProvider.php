@@ -74,7 +74,7 @@ class AdminMenuProvider extends ServiceProvider
             'category',
             function (AdminMenu $menu) {
                 $menu->key('category')
-                    ->label('Categories')
+                    ->label('Danh mục')
                     ->route('admin.category.index');
             }
         );
@@ -83,7 +83,7 @@ class AdminMenuProvider extends ServiceProvider
             'product',
             function (AdminMenu $menu) {
                 $menu->key('category')
-                    ->label('Products')
+                    ->label('Sản phẩm')
                     ->route('admin.product.index');
             }
         );
@@ -92,7 +92,7 @@ class AdminMenuProvider extends ServiceProvider
             'attribute',
             function (AdminMenu $menu) {
                 $menu->key('attribute')
-                    ->label('Products Attributes')
+                    ->label('Thuộc tính sản phẩm')
                     ->route('admin.attribute.index');
             }
         );
@@ -101,7 +101,7 @@ class AdminMenuProvider extends ServiceProvider
             'property',
             function (AdminMenu $menu) {
                 $menu->key('property')
-                    ->label('Property')
+                    ->label('Đặc tính')
                     ->route('admin.property.index');
             }
         );
@@ -109,7 +109,7 @@ class AdminMenuProvider extends ServiceProvider
         AdminMenuFacade::add(
             'content', 
             function (AdminMenu $menu) {
-                $menu->label('Content')->route('#')->icon('ti-files');
+                $menu->label('Nội dung')->route('#')->icon('ti-files');
             }
         );
 
@@ -117,7 +117,7 @@ class AdminMenuProvider extends ServiceProvider
         $contentMenu->subMenu(
             'page',
             function (AdminMenu $menu) {
-                $menu->key('page')->label('Pages')->route('admin.page.index');
+                $menu->key('page')->label('Trang')->route('admin.page.index');
             }
         );
 
@@ -131,7 +131,7 @@ class AdminMenuProvider extends ServiceProvider
         AdminMenuFacade::add(
             'user',
             function (AdminMenu $menu) {
-                $menu->label('Customers')->route('#')->icon('ti-user');
+                $menu->label('Khách hàng')->route('#')->icon('ti-user');
             }
         );
 
@@ -140,14 +140,14 @@ class AdminMenuProvider extends ServiceProvider
         $userMenu->subMenu(
             'user',
             function (AdminMenu $menu) {
-                $menu->key('user')->label('Overview')->route('admin.user.index');
+                $menu->key('user')->label('Tổng quan')->route('admin.user.index');
             }
         );
         $userMenu->subMenu(
             'user_group', 
             function (AdminMenu $menu) {
                 $menu->key('user_group')
-                    ->label('Customers Groups')
+                    ->label('Nhóm khách hàng')
                     ->route('admin.user-group.index');
             }
         );
@@ -155,7 +155,7 @@ class AdminMenuProvider extends ServiceProvider
         AdminMenuFacade::add(
             'orders',
             function (AdminMenu $menu) {
-                $menu->label('Orders')->route('#')->icon('ti-truck');
+                $menu->label('Đặt hàng')->route('#')->icon('ti-truck');
             }
         );
 
@@ -163,14 +163,14 @@ class AdminMenuProvider extends ServiceProvider
         $orderMenu->subMenu(
             'order',
             function (AdminMenu $menu) {
-                $menu->key('order')->label('Overview')->route('admin.order.index');
+                $menu->key('order')->label('Tỗng quan')->route('admin.order.index');
             }
         );
         $orderMenu->subMenu(
             'order_return_request',
             function (AdminMenu $menu) {
                 $menu->key('order_return_request')
-                    ->label('Order Return Request')
+                    ->label('Yêu cầu trả hàng')
                     ->route('admin.order-return-request.index');
             }
         );
@@ -178,7 +178,7 @@ class AdminMenuProvider extends ServiceProvider
         $orderMenu->subMenu(
             'order_status', function (AdminMenu $menu) {
                 $menu->key('order')
-                    ->label('Order Status')
+                    ->label('Tình trạng đơn hàng')
                     ->route('admin.order-status.index');
             }
         );
@@ -186,7 +186,7 @@ class AdminMenuProvider extends ServiceProvider
         AdminMenuFacade::add(
             'system',
             function (AdminMenu $systemMenu) {
-                $systemMenu->label('Settings')->route('#')->icon('ti-settings');
+                $systemMenu->label('Cài đặt')->route('#')->icon('ti-settings');
             }
         );
 
@@ -196,7 +196,7 @@ class AdminMenuProvider extends ServiceProvider
             'configuration',
             function (AdminMenu $menu) {
                 $menu->key('configuration')
-                    ->label('Configuration')
+                    ->label('Cấu hình')
                     ->route('admin.configuration')
                     ->icon('ti-settings');
             }
@@ -206,7 +206,7 @@ class AdminMenuProvider extends ServiceProvider
             'site_currency_setup',
             function (AdminMenu $menu) {
                 $menu->key('site_currency_setup')
-                    ->label('Currencies')
+                    ->label('Đơn vị tiền tệ')
                     ->route('admin.site-currency.index');
             }
         );
@@ -215,7 +215,7 @@ class AdminMenuProvider extends ServiceProvider
             'country',
             function (AdminMenu $menu) {
                 $menu->key('country')
-                    ->label('Country')
+                    ->label('Quốc gia')
                     ->route('admin.country.index');
             }
         );
@@ -230,7 +230,7 @@ class AdminMenuProvider extends ServiceProvider
             'tax_group',
             function (AdminMenu $menu) {
                 $menu->key('tax_group')
-                    ->label('Tax Group')
+                    ->label('Nhóm thuế')
                     ->route('admin.tax-group.index');
             }
         );
@@ -238,7 +238,7 @@ class AdminMenuProvider extends ServiceProvider
             'tax_rate',
             function (AdminMenu $menu) {
                 $menu->key('tax_rate')
-                    ->label('Tax Rate')
+                    ->label('Thuế suất')
                     ->route('admin.tax-rate.index');
             }
         );
@@ -246,7 +246,7 @@ class AdminMenuProvider extends ServiceProvider
         $systemMenu->subMenu(
             'module',
             function (AdminMenu $menu) {
-                $menu->key('module')->label('Modules')->route('admin.module.index');
+                $menu->key('module')->label('Mô đun')->route('admin.module.index');
             }
         );
 
@@ -254,7 +254,7 @@ class AdminMenuProvider extends ServiceProvider
             'admin-user',
             function (AdminMenu $menu) {
                 $menu->key('admin-user')
-                    ->label('Staff')
+                    ->label('Nhân viên')
                     ->route('admin.admin-user.index');
             }
         );
@@ -263,7 +263,7 @@ class AdminMenuProvider extends ServiceProvider
             'role',
             function (AdminMenu $menu) {
                 $menu->key('role')
-                    ->label('Roles/Permissions')
+                    ->label('Vai trò/Quyền hạn')
                     ->route('admin.role.index');
             }
         );
@@ -271,7 +271,7 @@ class AdminMenuProvider extends ServiceProvider
         $systemMenu->subMenu(
             'themes', 
             function (AdminMenu $menu) {
-                $menu->key('themes')->label('Themes')->route('admin.theme.index');
+                $menu->key('themes')->label('Giao diện')->route('admin.theme.index');
             }
         );
     }

@@ -14,14 +14,14 @@ class TaxGroupDataGrid
 
         $dataGrid->model($model)
             ->column('id', ['sortable' => true])
-            ->column('name', ['label' => 'Name'])
+            ->column('name', ['label' => 'Tên'])
             ->linkColumn(
                 'edit',
                 [],
                 function ($model) {
                     return "<a href='" . 
                         route('admin.tax-group.edit', $model->id) . 
-                        "' >Edit</a>";
+                        "' >Chỉnh</a>";
                 }
             )->linkColumn(
                 'show', 
@@ -29,7 +29,7 @@ class TaxGroupDataGrid
                 function ($model) {
                     return "<a href='" . 
                         route('admin.tax-group.show', $model->id) . 
-                        "' >Show</a>";
+                        "' >Hiện</a>";
                 }
             );
 

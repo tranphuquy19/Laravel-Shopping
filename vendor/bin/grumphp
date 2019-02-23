@@ -1,10 +1,31 @@
-#!/usr/bin/env sh
+#!/usr/bin/env php
+<?php
 
-dir=$(cd "${0%[/\\]*}" > /dev/null; cd "../phpro/grumphp/bin" && pwd)
+define('GRUMPHP_PATH', realpath(__DIR__ . '/..'));
 
-if [ -d /proc/cygdrive ] && [[ $(which php) == $(readlink -n /proc/cygdrive)/* ]]; then
-   # We are in Cgywin using Windows php, so the path must be translated
-   dir=$(cygpath -m "$dir");
-fi
+$autoloadLocations = [
+    getcwd() . '/vendor/autoload.php',
+    getcwd() . '/../../autoload.php',
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+];
 
-"${dir}/grumphp" "$@"
+$loaded = false;
+foreach ($autoloadLocations as $autoload) {
+    if (is_file($autoload)) {
+        require_once($autoload);
+        $loaded = true;
+    }
+}
+
+if (!$loaded) {
+    fwrite(STDERR,
+        'You must set up the project dependencies, run the following commands:' . PHP_EOL .
+        'curl -s http://getcomposer.org/installer | php' . PHP_EOL .
+        'php composer.phar install' . PHP_EOL
+    );
+    exit(1);
+}
+
+$app = new GrumPHP\Console\Application();
+$app->run();

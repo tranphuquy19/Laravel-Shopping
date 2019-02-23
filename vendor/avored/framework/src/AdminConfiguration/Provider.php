@@ -74,10 +74,10 @@ class Provider extends ServiceProvider
     protected function registerAdminConfiguration()
     {
         $configurationGroup = AdminConfigurationFacade::add('general')
-            ->label('Chung');
+            ->label('Thông tin chung');
 
         $configurationGroup->addConfiguration('general_site_title')
-            ->label('Tên trang web')
+            ->label('Tên trang')
             ->type('text')
             ->name('general_site_title');
 
@@ -94,12 +94,12 @@ class Provider extends ServiceProvider
             ->options($siteCurrencyRepository);
 
         $configurationGroup->addConfiguration('general_administrator_email')
-            ->label('Administrator Email')
+            ->label('Email quản trị viên')
             ->type('text')
             ->name('general_administrator_email');
 
         $configurationGroup->addConfiguration('general_term_condition_page')
-            ->label('Term & Condition Page')
+            ->label('Điều khoản & điều kiện')
             ->type('select')
             ->name('general_term_condition_page')
             ->options(
@@ -110,7 +110,7 @@ class Provider extends ServiceProvider
             );
 
         $configurationGroup->addConfiguration('general_home_page')
-            ->label('Home Page')
+            ->label('Trang chủ')
             ->type('select')
             ->name('general_home_page')
             ->options(
@@ -120,10 +120,10 @@ class Provider extends ServiceProvider
             );
 
         $userGroup = AdminConfigurationFacade::add('users')
-            ->label('Users');
+            ->label('Người dùng');
 
         $userGroup->addConfiguration('user_default_country')
-            ->label('User Default Country')
+            ->label('Quốc gia mặc định')
             ->type('select')
             ->name('user_default_country')
             ->options(
@@ -133,7 +133,7 @@ class Provider extends ServiceProvider
             );
 
         $userGroup->addConfiguration('user_activation_required')
-            ->label('User Activation Required')
+            ->label('Yêu cầu xác thực người dùng')
             ->type('select')
             ->name('user_activation_required')
             ->options(
@@ -143,10 +143,10 @@ class Provider extends ServiceProvider
             );
 
         $shippingGroup = AdminConfigurationFacade::add('shipping')
-            ->label('Shipping');
+            ->label('Giao hàng');
 
         $shippingGroup->addConfiguration('shipping_free_shipping_enabled')
-            ->label('Is Free Shipping Enabled')
+            ->label('Miễn phí vận chuyển?')
             ->type('select')
             ->name('shipping_free_shipping_enabled')
             ->options(
@@ -156,10 +156,10 @@ class Provider extends ServiceProvider
             );
 
         $paymentGroup = AdminConfigurationFacade::add('payment')
-            ->label('Payment');
+            ->label('Thanh toán');
 
         $paymentGroup->addConfiguration('payment_stripe_enabled')
-            ->label('Payment Stripe Enabled')
+            ->label('Thanh toán Stripe')
             ->type('select')
             ->name('payment_stripe_enabled')
             ->options(
@@ -169,20 +169,20 @@ class Provider extends ServiceProvider
             );
 
         $paymentGroup->addConfiguration('payment_stripe_publishable_key')
-            ->label('Payment Stripe Publishable Key')
+            ->label('Khóa Stripe công khai')
             ->type('text')
             ->name('payment_stripe_publishable_key');
 
         $paymentGroup->addConfiguration('avored_stripe_secret_key')
-            ->label('Payment Stripe Secret Key')
+            ->label('Khóa Stripe bảo mật')
             ->type('text')
             ->name('avored_stripe_secret_key');
 
         $taxGroup = AdminConfigurationFacade::add('tax')
-            ->label('Tax');
+            ->label('Thuế');
 
         $taxGroup->addConfiguration('tax_enabled')
-            ->label('Is Tax Enabled')
+            ->label('Áp dụng thuế?')
             ->type('select')
             ->name('tax_enabled')
             ->options(
@@ -192,12 +192,12 @@ class Provider extends ServiceProvider
             );
 
         $taxGroup->addConfiguration('tax_percentage')
-            ->label('Tax Percentage')
+            ->label('Phần trăm thuế')
             ->type('text')
             ->name('tax_percentage');
 
         $taxGroup->addConfiguration('tax_default_country')
-            ->label('Tax Default Country')
+            ->label('Thuế theo quốc gia')
             ->type('select')
             ->name('tax_default_country')
             ->options(

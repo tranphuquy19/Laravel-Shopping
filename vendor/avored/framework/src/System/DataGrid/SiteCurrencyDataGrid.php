@@ -14,13 +14,13 @@ class SiteCurrencyDataGrid
 
         $dataGrid->model($model)
                 ->column('id', ['sortable' => true])
-                ->column('code', ['label' => 'Code'])
-                ->column('name', ['label' => 'Name'])
-                ->column('conversion_rate', ['label' => 'Convertion Rate'])
+                ->column('code', ['label' => 'Mã'])
+                ->column('name', ['label' => 'Tên'])
+                ->column('conversion_rate', ['label' => 'Tỉ lệ hoán đổi'])
                 ->linkColumn('edit', [], function ($model) {
-                    return "<a href='" . route('admin.site-currency.edit', $model->id) . "' >Edit</a>";
+                    return "<a href='" . route('admin.site-currency.edit', $model->id) . "' >Chỉnh</a>";
                 })->linkColumn('show', [], function ($model) {
-                    return "<a href='" . route('admin.site-currency.show', $model->id) . "' >Show</a>";
+                    return "<a href='" . route('admin.site-currency.show', $model->id) . "' >Hiện</a>";
                 });
 
         $this->dataGrid = $dataGrid;

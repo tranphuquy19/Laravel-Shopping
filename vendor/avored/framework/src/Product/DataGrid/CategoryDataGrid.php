@@ -16,20 +16,20 @@ class CategoryDataGrid
         $dataGrid->model($model)
                 ->column('name', function (TextColumn $column) {
                     $column->identifier('name')
-                            ->label('Name')
+                            ->label('Tên')
                             ->sortable(true)
                             ->canFilter(true);
                 })
                 ->column('slug', function (TextColumn $column) {
                     $column->identifier('slug')
-                            ->label('Slug')
+                            ->label('Kỹ thuật')
                             ->sortable(true)
                             ->canFilter(true);
                 })
                 ->linkColumn('edit', [], function ($model) {
-                    return "<a href='" . route('admin.category.edit', $model->id) . "' >Edit</a>";
+                    return "<a href='" . route('admin.category.edit', $model->id) . "' >Chỉnh</a>";
                 })->linkColumn('show', [], function ($model) {
-                    return "<a href='" . route('admin.category.show', $model->id) . "' >Show</a>";
+                    return "<a href='" . route('admin.category.show', $model->id) . "' >Hiện</a>";
                 });
 
         $this->dataGrid = $dataGrid;

@@ -14,12 +14,12 @@ class OrderReturnRequestDataGrid
 
         $dataGrid->model($model)
                     ->column('order_id', ['label' => 'Thứ tự yêu cầu trả hàng', 'sortable' => true])
-                    ->column('customer_name', ['label' => 'Customer Name', 'sortable' => true])
-                    ->column('customer_phone', ['label' => 'Customer Phone', 'sortable' => true])
-                    ->column('comment', ['label' => 'Comment'])
-                    ->column('status', ['label' => 'Status'])
+                    ->column('customer_name', ['label' => 'Tên khách hàng', 'sortable' => true])
+                    ->column('customer_phone', ['label' => 'Sdt khách hàng', 'sortable' => true])
+                    ->column('comment', ['label' => 'Bình luận'])
+                    ->column('status', ['label' => 'Tình trạng'])
                     ->linkColumn('view', [], function ($model) {
-                        return "<a href='" . route('admin.order-return-request.view', $model->id) . "' >View</a>";
+                        return "<a href='" . route('admin.order-return-request.view', $model->id) . "' >Hiện</a>";
                     });
 
         $this->dataGrid = $dataGrid;

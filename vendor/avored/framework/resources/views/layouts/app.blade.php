@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'ahihih') }}</title>
+    <title>{{ config('app.name', 'AvoRed Ecommerce') }}</title>
 
     <!-- Styles -->
     <link href="{{ url('vendor/avored-admin/css/app.css') }}" rel="stylesheet"> 

@@ -24,9 +24,9 @@ class ThemeDataGrid
         $dataGrid = DataGrid::make('admin_theme_controller');
 
         $dataGrid->model($model)
-                ->column('name', ['label' => 'Name'])
-                ->column('identifier', ['label' => 'Identifier'])
-                ->linkColumn('is_active', ['label' => 'Is Active'], function ($model) use ($activeTheme) {
+                ->column('name', ['label' => 'Tên'])
+                ->column('identifier', ['label' => 'Định danh'])
+                ->linkColumn('is_active', ['label' => 'Kích hoạt'], function ($model) use ($activeTheme) {
                     if ($model['identifier'] == $activeTheme) {
                         return 'Yes';
                     }
@@ -38,12 +38,12 @@ class ThemeDataGrid
                                         method="post">
                                 ' . csrf_field() . '
                                 <button class="btn btn-primary" type="submit">
-                                    Activate
+                                    Kích hoạt
                                 </button>
                                 </form>
                                 ';
                     } else {
-                        return '<button href="#" class="btn disabled">Activated</button>';
+                        return '<button href="#" class="btn disabled">Đã kích hoạt</button>';
                     }
                 });
 

@@ -95,7 +95,7 @@ class Payment extends PaymentEcommerce implements PaymentContracts
             'amount' => $totalCents,
             'currency' => $currencyCode,
             'source' => $request->get('stripeToken'), // obtained with Stripe.js
-            'description' => 'Thanh toán ',
+            'description' => 'Thanh toán ChipChipWatch',
         ]);
 
         return $response;

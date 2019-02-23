@@ -14,15 +14,15 @@ class AdminUserDataGrid
 
         $dataGrid->model($model)
                 ->column('id', ['sortable' => true])
-                ->column('first_name', ['label' => 'First Name'])
-                ->column('last_name', ['label' => 'Last Name'])
+                ->column('first_name', ['label' => 'Họ'])
+                ->column('last_name', ['label' => 'Tên'])
                 ->linkColumn('show_api', ['label' => 'Show API'], function ($model) {
                     return "<a href='" . route('admin.admin-user.show.api') . "' >Show API</a>";
                 })
                 ->linkColumn('edit', [], function ($model) {
-                    return "<a href='" . route('admin.admin-user.edit', $model->id) . "' >Edit</a>";
+                    return "<a href='" . route('admin.admin-user.edit', $model->id) . "' >Chỉnh</a>";
                 })->linkColumn('show', [], function ($model) {
-                    return "<a href='" . route('admin.admin-user.show', $model->id) . "' >Show</a>";
+                    return "<a href='" . route('admin.admin-user.show', $model->id) . "' >Hiện</a>";
 
                     /*
                     if($model->is_super_admin === 1) {

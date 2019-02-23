@@ -2,28 +2,28 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            Page Details
+            Thông tin trang
         </div>
 
         <div class="card-body table-bordered">
             <table class="table">
                 <tr>
-                    <td>Name</td>
+                    <td>Tên</td>
                     <td>{{ $page->name }}</td>
                 </tr>
                 
                 <tr>
-                    <td>Slug</td>
+                    <td>phân trang</td>
                     <td>{{ $page->slug }}</td>
                 </tr>
                 
                 <tr>
-                    <td>Meta Title</td>
+                    <td>Tên trang</td>
                     <td>{{ $page->meta_title }}</td>
                 </tr>
                 
                 <tr>
-                    <td>Meta Description</td>
+                    <td>Mô tả</td>
                     <td>{{ $page->meta_description }}</td>
                 </tr>
             
@@ -49,12 +49,12 @@
                                         }
                                     });"    
                         class="btn btn-danger" >
-                        Destroy
+                        Xóa
                     </button>
                 </form>
                
             </div>
-            <a class="btn" href="{{ route('admin.page.index') }}">Cancel</a>
+            <a class="btn" href="{{ route('admin.page.index') }}">Hủy</a>
         </div>
     </div>
 

@@ -71,370 +71,370 @@ class PermissionProvider extends ServiceProvider
                     ->routes('admin.page.create,admin.page.store');
         });
         $group->addPermission('admin-page-update', function (Permission $permission) {
-            $permission->label('Update Page')
+            $permission->label('Cập nhật trang')
                     ->routes('admin.page.edit,admin.page.update');
         });
         $group->addPermission('admin-page-destroy', function (Permission $permission) {
-            $permission->label('Destroy Page')
+            $permission->label('Xóa trang')
                     ->routes('admin.page.destroy');
         });
         $group->addPermission('admin-page-show', function (Permission $permission) {
-            $permission->label('Show Page')
+            $permission->label('Hiển thị tranng')
                     ->routes('admin.page.show');
         });
 
         $group = PermissionFacade::add('menu', function (PermissionGroup $group) {
-            $group->label('Menu Permissions');
+            $group->label('Danh sách quyền hạn');
         });
 
         $group->addPermission('admin-menu-list', function (Permission $permission) {
-            $permission->label('Front Menu Index')
+            $permission->label('Thứ tự menu trước')
                     ->routes('admin.menu.index');
         });
 
         $group->addPermission('admin-menu-store', function (Permission $permission) {
-            $permission->label('Save Front Menu')
+            $permission->label('Lưu menu trước')
                     ->routes('admin.menu.store');
         });
 
         $group = PermissionFacade::add('category', function (PermissionGroup $group) {
-            $group->label('Category Permissions');
+            $group->label('Quyền danh mục');
         });
         $group->addPermission('admin-category-list', function (Permission $permission) {
-            $permission->label('Category List')
+            $permission->label('Ds danh mục')
                     ->routes('admin.category.index');
         });
         $group->addPermission('admin-category-create', function (Permission $permission) {
-            $permission->label('Create Category')
+            $permission->label('Tạo danh mục')
                     ->routes('admin.category.create,admin.category.store');
         });
         $group->addPermission('admin-category-update', function (Permission $permission) {
-            $permission->label('Update Category')
+            $permission->label('Cập nhật danh mục')
                     ->routes('admin.category.edit,admin.category.update');
         });
         $group->addPermission('admin-category-destroy', function (Permission $permission) {
-            $permission->label('Destroy Category')
+            $permission->label('Xóa danh mục')
                     ->routes('admin.category.destroy');
         });
         $group->addPermission('admin-category-show', function (Permission $permission) {
-            $permission->label('Show Category')
+            $permission->label('Hiển thị danh mục')
                     ->routes('admin.category.show');
         });
 
         $group = PermissionFacade::add('product', function (PermissionGroup $group) {
-            $group->label('Product Permissions');
+            $group->label('Quyền sản phẩm');
         });
 
         $group->addPermission('admin-product-list', function (Permission $permission) {
-            $permission->label('Product List')
+            $permission->label('Danh sách sản phẩm')
                     ->routes('admin.product.index');
         });
         $group->addPermission('admin-product-create', function (Permission $permission) {
-            $permission->label('Create Product')
+            $permission->label('Tạo sản phẩm')
                     ->routes('admin.product.create,admin.product.store');
         });
         $group->addPermission('admin-product-update', function (Permission $permission) {
-            $permission->label('Update Product')
+            $permission->label('Cập nhật sản phẩm')
                     ->routes('admin.product.edit,admin.product.update');
         });
         $group->addPermission('admin-product-destroy', function (Permission $permission) {
-            $permission->label('Destroy Product')
+            $permission->label('Xóa sản phẩm')
                     ->routes('admin.product.destroy');
         });
         $group->addPermission('admin-product-show', function (Permission $permission) {
-            $permission->label('Show Product')
+            $permission->label('Hiển thị sản phẩm')
                     ->routes('admin.product.show');
         });
 
         $group = PermissionFacade::add('order', function (PermissionGroup $group) {
-            $group->label('Order Permissions');
+            $group->label('Quyền đặt hàng');
         });
 
         $group->addPermission('admin-order-list', function (Permission $permission) {
-            $permission->label('Order List')
+            $permission->label('Danh sách đơn hàng')
                     ->routes('admin.order.index');
         });
 
         $group->addPermission('admin-order-view', function (Permission $permission) {
-            $permission->label('Order View')
+            $permission->label('Hiển thị đơn hàng')
                     ->routes('admin.order.view');
         });
         $group->addPermission('admin-order-send-invoice-email', function (Permission $permission) {
-            $permission->label('Order Sent Invoice By Email')
+            $permission->label('Gửi Email hóa đơn')
                     ->routes('admin.order.send-email-invoice');
         });
         $group->addPermission('admin-order-change-status', function (Permission $permission) {
-            $permission->label('Order Change Status')
+            $permission->label('Tình trạng thay đổi đơn hàng')
                     ->routes('admin.order.change-status,admin.order.update-status');
         });
 
         $group = PermissionFacade::add('order-status', function (PermissionGroup $group) {
-            $group->label('Order Status Permissions');
+            $group->label('Quyền đặt hàng');
         });
         $group->addPermission('admin-order-status-list', function (Permission $permission) {
-            $permission->label('Order Status List')
+            $permission->label('Danh sách tình trạng đơn hàng')
                     ->routes('admin.order-status.index');
         });
         $group->addPermission('admin-order-status-create', function (Permission $permission) {
-            $permission->label('Create Order Status')
+            $permission->label('Tạo tình trạng đơn hàng')
                     ->routes('admin.order-status.create,admin.order-status.store');
         });
         $group->addPermission('admin-order-status-update', function (Permission $permission) {
-            $permission->label('Update Order Status')
+            $permission->label('Cập nhật tình trạng đơn hàng')
                     ->routes('admin.order-status.edit,admin.order-status.update');
         });
         $group->addPermission('admin-order-status-destroy', function (Permission $permission) {
-            $permission->label('Destroy Order Status')
+            $permission->label('Hủy tình trạng đơn hàng')
                     ->routes('admin.order-status.destroy');
         });
         $group->addPermission('admin-order-status-show', function (Permission $permission) {
-            $permission->label('Show Order Status')
+            $permission->label('Hiển thị tình trạng đơn hàng')
                     ->routes('admin.order-status.show');
         });
 
         $group = PermissionFacade::add('attribute', function (PermissionGroup $group) {
-            $group->label('Attribute Permissions');
+            $group->label('Quyền thuộc tính');
         });
         $group->addPermission('admin-attribute-list', function (Permission $permission) {
-            $permission->label('Attribute List')
+            $permission->label('Danh sách thuộc tính')
                     ->routes('admin.attribute.index');
         });
         $group->addPermission('admin-attribute-create', function (Permission $permission) {
-            $permission->label('Create Attribute')
+            $permission->label('Tạo thuộc tính')
                     ->routes('admin.attribute.create,admin.attribute.store');
         });
         $group->addPermission('admin-attribute-update', function (Permission $permission) {
-            $permission->label('Edit Attribute')
+            $permission->label('Chỉnh sửa thuộc tính')
                     ->routes('admin.attribute.edit,admin.attribute.update');
         });
         $group->addPermission('admin-attribute-destroy', function (Permission $permission) {
-            $permission->label('Destroy Attribute')
+            $permission->label('Xóa thuộc tính')
                     ->routes('admin.attribute.destroy');
         });
         $group->addPermission('admin-attribute-show', function (Permission $permission) {
-            $permission->label('Show Attribute')
+            $permission->label('Hiển thị thuộc tính')
                     ->routes('admin.attribute.show');
         });
 
         $group = PermissionFacade::add('property', function (PermissionGroup $group) {
-            $group->label('Property Permissions');
+            $group->label('Quyền đặc tính');
         });
 
         $group->addPermission('admin-property-list', function (Permission $permission) {
-            $permission->label('Property List')
+            $permission->label('Danh sách đặc tính')
                     ->routes('admin.property.index');
         });
         $group->addPermission('admin-property-create', function (Permission $permission) {
-            $permission->label('Property Create')
+            $permission->label('Tạo đặc tính')
                     ->routes('admin.property.create,admin.property.store');
         });
         $group->addPermission('admin-attribute-update', function (Permission $permission) {
-            $permission->label('Property Update')
+            $permission->label('Cập nhật đặc tính')
                     ->routes('admin.property.edit,admin.property.update');
         });
         $group->addPermission('admin-property-destroy', function (Permission $permission) {
-            $permission->label('Property Destroy')
+            $permission->label('Hủy đặc tính')
                     ->routes('admin.property.destroy');
         });
         $group->addPermission('admin-property-show', function (Permission $permission) {
-            $permission->label('Property Show')
+            $permission->label('Hiển thị đặc tính')
                     ->routes('admin.property.show');
         });
 
         $group = PermissionFacade::add('user', function (PermissionGroup $group) {
-            $group->label('User Permissions');
+            $group->label('Quyền người dùng');
         });
 
         $group->addPermission('admin-user-list', function (Permission $permission) {
-            $permission->label('User List')
+            $permission->label('Danh sách người dùng')
                     ->routes('admin.user.index');
         });
         $group->addPermission('admin-user-create', function (Permission $permission) {
-            $permission->label('User Create')
+            $permission->label('Tạo người dùng')
                     ->routes('admin.user.create,admin.user.store');
         });
         $group->addPermission('admin-user-update', function (Permission $permission) {
-            $permission->label('User Update')
+            $permission->label('Cập nhật người dùng')
                     ->routes('admin.user.edit,admin.user.update');
         });
         $group->addPermission('admin-user-destroy', function (Permission $permission) {
-            $permission->label('User Destroy')
+            $permission->label('Xóa người dùng')
                     ->routes('admin.user.destroy');
         });
         $group->addPermission('admin-user-show', function (Permission $permission) {
-            $permission->label('User Show')
+            $permission->label('Hiển thị người dùng')
                     ->routes('admin.user.show');
         });
 
         $group = PermissionFacade::add('user-group', function (PermissionGroup $group) {
-            $group->label('User Group Permissions');
+            $group->label('Quyền nhóm người dùng');
         });
 
         $group->addPermission('admin-user-group-list', function (Permission $permission) {
-            $permission->label('User Group List')
+            $permission->label('Danh sách nhóm người dùng')
                     ->routes('admin.user-group.index');
         });
         $group->addPermission('admin-user-group-create', function (Permission $permission) {
-            $permission->label('User Group Create')
+            $permission->label('Tạo nhóm người dùng')
                     ->routes('admin.user-group.create,admin.user-group.store');
         });
         $group->addPermission('admin-user-group.update', function (Permission $permission) {
-            $permission->label('User Group Update')
+            $permission->label('Cập nhật nhóm người dùng')
                     ->routes('admin.user-group.edit,admin.user-group.update');
         });
         $group->addPermission('admin-user-group-destroy', function (Permission $permission) {
-            $permission->label('User Group Destroy')
+            $permission->label('Xóa nhóm người dùng')
                     ->routes('admin.user-group.destroy');
         });
         $group->addPermission('admin-user-group-show', function (Permission $permission) {
-            $permission->label('User Group Show')
+            $permission->label('Hiển thị nhóm người dùng')
                     ->routes('admin.user-group.show');
         });
 
         $group = PermissionFacade::add('admin-user', function (PermissionGroup $group) {
-            $group->label('Admin User Permissions');
+            $group->label('Quyền quản trị viên');
         });
 
         $group->addPermission('admin-admin-user-list', function (Permission $permission) {
-            $permission->label('Admin User List')
+            $permission->label('Danh sách quản trị viên')
                     ->routes('admin.admin-user.index');
         });
         $group->addPermission('admin-admin-user-create', function (Permission $permission) {
-            $permission->label('Admin User Create')
+            $permission->label('Thêm quản trị viên')
                     ->routes('admin.admin-user.create,admin.admin-user.store');
         });
         $group->addPermission('admin-admin-user-update', function (Permission $permission) {
-            $permission->label('Admin User Update')
+            $permission->label('Cập nhật quản trị viên')
                     ->routes('admin.admin-user.edit,admin.admin-user.update');
         });
         $group->addPermission('admin-admin-user-destroy', function (Permission $permission) {
-            $permission->label('Admin User Destroy')
+            $permission->label('Xóa quản trị viên')
                     ->routes('admin.admin-user.destroy');
         });
         $group->addPermission('admin-admin-user-show', function (Permission $permission) {
-            $permission->label('Admin User Show')
+            $permission->label('Hiển thị quản trị viên')
                     ->routes('admin.admin-user.show');
         });
 
         $group = PermissionFacade::add('role', function (PermissionGroup $group) {
-            $group->label('Role Permissions');
+            $group->label('Quyền vai trò');
         });
 
         $group->addPermission('admin-role-list', function (Permission $permission) {
-            $permission->label('Role List')
+            $permission->label('Danh sách vai trò')
                     ->routes('admin.role.index');
         });
         $group->addPermission('admin-role-create', function (Permission $permission) {
-            $permission->label('Role Create')
+            $permission->label('Tạo vai trò')
                     ->routes('admin.role.create,admin.role.store');
         });
         $group->addPermission('admin-role-update', function (Permission $permission) {
-            $permission->label('Role Update')
+            $permission->label('Cập nhật vai trò')
                     ->routes('admin.role.edit,admin.role.update');
         });
         $group->addPermission('admin-role-destroy', function (Permission $permission) {
-            $permission->label('Role Destroy')
+            $permission->label('Xóa vai trò')
                     ->routes('admin.role.destroy');
         });
         $group->addPermission('admin-role-show', function (Permission $permission) {
-            $permission->label('Role Show')
+            $permission->label('Hiển thị vai trò')
                     ->routes('admin.role.show');
         });
 
         $group = PermissionFacade::add('configuration', function (PermissionGroup $group) {
-            $group->label('Configuration Permissions');
+            $group->label('Quyền cấu hình');
         });
 
         $group->addPermission('admin-configuration', function (Permission $permission) {
-            $permission->label('Configuration')
+            $permission->label('Cấu hình')
                     ->routes('admin.configuration');
         });
         $group->addPermission('admin-configuration-store', function (Permission $permission) {
-            $permission->label('Configuration Store')
+            $permission->label('Lưu cấu hình')
                     ->routes('admin.configuration.store');
         });
 
         $group = PermissionFacade::add('site-currency', function (PermissionGroup $group) {
-            $group->label('Site Currency Permissions');
+            $group->label('Quyền đơn vị tiền tệ');
         });
 
         $group->addPermission('admin-site-currency-list', function (Permission $permission) {
-            $permission->label('Site Currency List')
+            $permission->label('Danh sách đơn vị tiền tệ')
                     ->routes('admin.site-currency.index');
         });
         $group->addPermission('admin-site-currency-create', function (Permission $permission) {
-            $permission->label('Site Currency Create')
+            $permission->label('Thêm đơn vị tiền tệ')
                     ->routes('admin.site-currency.create,admin.site-currency.store');
         });
         $group->addPermission('admin-site-currency-update', function (Permission $permission) {
-            $permission->label('Site Currency Update')
+            $permission->label('Cập nhật đơn vị tiền tệ')
                     ->routes('admin.site-currency.edit,admin.site-currency.update');
         });
         $group->addPermission('admin-site-currency-destroy', function (Permission $permission) {
-            $permission->label('Site Currency Destroy')
+            $permission->label('Xóa đơn vị tiền tệ')
                     ->routes('admin.site-currency.destroy');
         });
         $group->addPermission('admin-site-currency-show', function (Permission $permission) {
-            $permission->label('Site Currency Show')
+            $permission->label('Hiển thị đơn vị tiền tệ')
                     ->routes('admin.site-currency.show');
         });
 
         $group = PermissionFacade::add('country', function (PermissionGroup $group) {
-            $group->label('Country Permissions');
+            $group->label('Quyền quốc gia');
         });
 
         $group->addPermission('admin-country-list', function (Permission $permission) {
-            $permission->label('Country  List')
+            $permission->label('Danh sách quốc gia')
                     ->routes('admin.country.index');
         });
         $group->addPermission('admin-country-create', function (Permission $permission) {
-            $permission->label('Country Create')
+            $permission->label('Thêm quốc gia')
                     ->routes('admin.country.create,admin.country.store');
         });
         $group->addPermission('admin-country-update', function (Permission $permission) {
-            $permission->label('Country Update')
+            $permission->label('Cập nhật quốc gia')
                     ->routes('admin.country.edit,admin.country.update');
         });
         $group->addPermission('admin-country-destroy', function (Permission $permission) {
-            $permission->label('Country Destroy')
+            $permission->label('Xóa quốc gia')
                     ->routes('admin.country.destroy');
         });
         $group->addPermission('admin-country-show', function (Permission $permission) {
-            $permission->label('Country Show')
+            $permission->label('Hiển thị quốc gia')
                     ->routes('admin.country.show');
         });
 
         $group = PermissionFacade::add('state', function (PermissionGroup $group) {
-            $group->label('State Permissions');
+            $group->label('Quyền tỉnh');
         });
 
         $group->addPermission('admin-state-list', function (Permission $permission) {
-            $permission->label('State List')
+            $permission->label('Danh sách vùng')
                     ->routes('admin.state.index');
         });
         $group->addPermission('admin-state-create', function (Permission $permission) {
-            $permission->label('State Create')
+            $permission->label('Thêm vùng')
                     ->routes('admin.state.create,admin.state.store');
         });
         $group->addPermission('admin-state-update', function (Permission $permission) {
-            $permission->label('State Update')
+            $permission->label('Cập nhật vùng')
                     ->routes('admin.state.edit,admin.state.update');
         });
         $group->addPermission('admin-site-currency-destroy', function (Permission $permission) {
-            $permission->label('State Destroy')
+            $permission->label('Xóa vùng')
                     ->routes('admin.state.destroy');
         });
         $group->addPermission('admin-site-currency-show', function (Permission $permission) {
-            $permission->label('State Show')
+            $permission->label('Hiển thị vùng')
                     ->routes('admin.state.show');
         });
 
         $group = PermissionFacade::add('theme', function (PermissionGroup $group) {
-            $group->label('Theme Permissions');
+            $group->label('Quyền giao diện');
         });
 
         $group->addPermission('admin-theme-list', function (Permission $permission) {
-            $permission->label('Theme List')
+            $permission->label('Danh sách giao diện')
                     ->routes('admin.theme.index');
         });
         $group->addPermission('admin-theme-create', function (Permission $permission) {
@@ -442,11 +442,11 @@ class PermissionProvider extends ServiceProvider
                     ->routes('admin.create.index', 'admin.theme.store');
         });
         $group->addPermission('admin-theme-activated', function (Permission $permission) {
-            $permission->label('Theme Activated')
+            $permission->label('Kích hoạt giao diện')
                     ->routes('admin.activated.index');
         });
         $group->addPermission('admin-theme-deactivated', function (Permission $permission) {
-            $permission->label('Theme Deactivated')
+            $permission->label('Hủy kích hoạt')
                     ->routes('admin.deactivated.index');
         });
         //$group->addPermission('admin-theme-destroy', function(Permission $permission) {
@@ -455,15 +455,15 @@ class PermissionProvider extends ServiceProvider
         //});
 
         $group = PermissionFacade::add('module', function (PermissionGroup $group) {
-            $group->label('Module Permissions');
+            $group->label('Quyền module');
         });
 
         $group->addPermission('admin-module-list', function (Permission $permission) {
-            $permission->label('Module List')
+            $permission->label('Danh sách Module')
                     ->routes('admin.module.index');
         });
         $group->addPermission('admin-module-create', function (Permission $permission) {
-            $permission->label('Module Upload')
+            $permission->label('Tải lên Module')
                     ->routes('admin.create.index', 'admin.module.store');
         });
 

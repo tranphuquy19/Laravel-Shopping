@@ -14,11 +14,11 @@ class StateDataGrid
 
         $dataGrid->model($model)
                 ->column('id', ['sortable' => true])
-                ->column('name', ['label' => 'Name'])
+                ->column('name', ['label' => 'Tên'])
                 ->linkColumn('edit', [], function ($model) {
-                    return "<a href='" . route('admin.state.edit', $model->id) . "' >Edit</a>";
+                    return "<a href='" . route('admin.state.edit', $model->id) . "' >Chỉnh</a>";
                 })->linkColumn('show', [], function ($model) {
-                    return "<a href='" . route('admin.state.show', $model->id) . "' >Show</a>";
+                    return "<a href='" . route('admin.state.show', $model->id) . "' >Hiện</a>";
                 });
 
         $this->dataGrid = $dataGrid;

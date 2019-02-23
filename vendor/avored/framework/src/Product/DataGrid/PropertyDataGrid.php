@@ -20,13 +20,13 @@ class PropertyDataGrid
                 'edit',
                 [],
                 function ($model) {
-                    return "<a href='" . route('admin.property.edit', $model->id) . "' >Edit</a>";
+                    return "<a href='" . route('admin.property.edit', $model->id) . "' >Chỉnh</a>";
                 }
             )->linkColumn(
                 'show',
                 [],
                 function ($model) {
-                    return "<a href='" . route('admin.property.show', $model->id) . "' >Show</a>";
+                    return "<a href='" . route('admin.property.show', $model->id) . "' >Hiện</a>";
                 }
             );
 

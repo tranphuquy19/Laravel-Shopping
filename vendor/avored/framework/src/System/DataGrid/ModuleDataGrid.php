@@ -13,9 +13,9 @@ class ModuleDataGrid
         $dataGrid = DataGrid::make('admin_theme_controller');
 
         $dataGrid->model($model)
-                ->column('name', ['label' => 'Name'])
-                ->column('identifier', ['label' => 'Identifier'])
-                ->column('status', ['label' => 'Status']);
+                ->column('name', ['label' => 'Tên'])
+                ->column('identifier', ['label' => 'Định danh'])
+                ->column('status', ['label' => 'Tình trạng']);
 
         $this->dataGrid = $dataGrid;
     }

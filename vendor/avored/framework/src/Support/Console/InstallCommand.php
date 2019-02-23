@@ -29,7 +29,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Install AvoRed e commerce an Laravel Shopping Cart';
+    protected $description = 'Install ChipChipWatch';
 
     /**
      * Create a new controller creator command instance.

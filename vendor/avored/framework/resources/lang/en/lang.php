@@ -22,7 +22,7 @@ return [
     'user' => "We can't find a user with that e-mail address.",
 
     'user' => [
-        'login-card-title' => 'AvoRed Admin Login',
+        'login-card-title' => 'ChipChip Admin Login',
         'email-label' => 'Email Address',
     ],
     
@@ -32,19 +32,19 @@ return [
     'admin-password-label' => 'Password',
     'admin-confirm-password-label' => 'Confirm Password',
 
-    'admin-dashboard-monthly-revenue-title' => 'Monthly Revenue',
-    'admin-dashboard-total-user-title' => 'Total User',
-    'admin-dashboard-total-order-title' => 'Total Orders',
-    'admin-dashboard-recent-order-title' => 'Recent Order',
+    'admin-dashboard-monthly-revenue-title' => 'Doanh thu hàng tháng',
+    'admin-dashboard-total-user-title' => 'Số người dùng',
+    'admin-dashboard-total-order-title' => 'Tổng đơn đặt hàng',
+    'admin-dashboard-recent-order-title' => 'Đơn gần đây',
 
-    'category.index.title' => 'Category List',
-    'category.index.create' => 'Create Category',
+    'category.index.title' => 'Danh mục',
+    'category.index.create' => 'Tạo danh mục',
 
-    'product.index.title' => 'Product List',
-    'products' => 'Products',
-    'product.create.text' => 'Create Product',
+    'product.index.title' => 'Danh sách sản phẩm',
+    'products' => 'Sản phẩm',
+    'product.create.text' => 'Tạo sản phẩm',
 
-    'address.configuration.title' => 'Address Configuration List',
+    'address.configuration.title' => 'Danh sách địa chỉ',
 
-    'cancel' => 'Cancel',
+    'cancel' => 'Hủy',
 ];

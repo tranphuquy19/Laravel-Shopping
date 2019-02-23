@@ -21,7 +21,7 @@ class AdminApiAuth
     public function handle($request, Closure $next, $guard = 'api')
     {
         if (Auth::guard($guard)->guest()) {
-            return JsonResponse::create(['message' => 'Bạn không có quyền truy cập api', 'status' => false], 401);
+            return JsonResponse::create(['message' => 'you are not authorized to access this api', 'status' => false], 401);
         }
 
         $user = Auth::user();
